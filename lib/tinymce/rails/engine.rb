@@ -46,7 +46,7 @@ module TinyMCE::Rails
     end
 
     def self.asset_host
-      host = Rails.application.config.action_controller.tinymce_asset_host
+      host = Rails.application.config.x.tinymce_asset_host
 
       if host.respond_to?(:call)
         # Callable asset hosts cannot be supported during
